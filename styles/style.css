@@ -112,6 +112,7 @@
 }
 
 .header__theme-menu-button_active {
+  pointer-events: none;
   border-top: 1px;
   border-left: 1px;
   border-bottom: 1px;
@@ -123,7 +124,7 @@
 .accent-title {
   font-weight: var(--font-weight);
   font-size: var(--title-font-size);
-  color: var(--title-color);
+  color: var(--title-color, rgba(219, 0, 255, 1));
   line-height: 83%;
 }
 
