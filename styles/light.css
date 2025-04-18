@@ -1,5 +1,5 @@
 :root.theme-light {
-  --dark-header-bg: url(../images/cover-image-light.png);
+  --bg: url(../images/cover-image-light.png);
   --main-font-family: 'IBM Plex Mono', monospace;
   --main-color: #353430;
   --accent-color: #FF8DCB;
@@ -86,11 +86,7 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-<<<<<<< HEAD
   --dark-header-bg: url(../images/cover-image-light.png);
-=======
-  --bg: url(../images/cover-image-light.png);
->>>>>>> b7d7783898201eef533923af6cf9e284a141e9ae
   --main-font-family: 'IBM Plex Mono', monospace;
   --main-color: #353430;
   --accent-color: #FF8DCB;
