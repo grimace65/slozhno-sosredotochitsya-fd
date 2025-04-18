@@ -1,5 +1,5 @@
 :root.theme-dark {
-  --dark-header-bg: url(../images/cover-image-dark.png);
+  --bg: url(../images/cover-image-dark.png);
   --main-font-family: 'IBM Plex Mono', monospace;
   --main-color: #F1B2CE;
   --accent-color: #FF0070;
