@@ -1,7 +1,7 @@
   .page {
   min-inline-size: 375px;
   max-inline-size: 1024px;
-  background-image: var(--bg, url(../images/cover-image-dark.png));
+  background-image: var(--bg, #000028);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
