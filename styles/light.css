@@ -40,3 +40,14 @@
     text-shadow: 2px 2px 0 var(--decor-color, #FF8DCB);
   }
 }
+
+@media (prefers-color-scheme: light) { 
+  :root { 
+  --bg: url(../images/cover-image-light.png); 
+  --bg-color: #FFF1F7; 
+  --main-color: #353430; 
+  --decor-color: #353430; 
+  --accent-color: #FF8DCB; 
+  --title-color: #FFC2E6; 
+  }
+} 
