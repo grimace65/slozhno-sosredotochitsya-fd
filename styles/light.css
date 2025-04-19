@@ -1,5 +1,6 @@
 :root.theme-light {
   --bg: url(../images/cover-image-light.png);
+  --bg-color: #FFF1F7;
   --main-font-family: 'IBM Plex Mono', monospace;
   --main-color: #353430;
   --decor-color: #353430;
@@ -85,6 +86,7 @@
 @media (prefers-color-scheme: light) {
   :root {
   --bg: url(../images/cover-image-light.png);
+  --bg-color: #FFF1F7;
   --main-font-family: 'IBM Plex Mono', monospace;
   --main-color: #353430;
   --decor-color: #353430;
