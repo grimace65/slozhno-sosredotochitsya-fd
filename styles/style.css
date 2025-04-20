@@ -1,5 +1,5 @@
-  .page {
-  min-inline-size: 375px;
+.page {
+  min-inline-size: 320px;
   max-inline-size: 1024px;
   background-color: var(--bg-color,  #000028);
   background-image: var(--bg);
@@ -26,6 +26,7 @@
   padding-block-end: var(--content-padding, 10px);
   padding-inline-start: var(--content-padding, 10px);
   padding-inline-end: var(--content-padding, 10px);
+  min-inline-size: 100%;
 }
 
 .decorated-zone::before {
@@ -99,7 +100,7 @@
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid rgba(255, 0, 112, 0.4);
+  outline: 1px solid var(--hover-outline);
   cursor: pointer;
 }
 
@@ -129,13 +130,15 @@
 }
 
 .header__title {
+  min-inline-size: 100%;
   align-self: start;
-  text-shadow: 4px 4px 0 var(--accent-color, #FF0070);
+  text-shadow: 4px 4px 0 var(--shadow-color);
 }
 
 .header__subtitle {
   align-self: center;
-  inline-size: 355px;
+  inline-size: 100%;
+  max-inline-size: 355px;
 }
 
 .title-decor {
@@ -143,7 +146,7 @@
   font-size: var(--content-text-size);
   font-weight: var(--font-weight);
   color: var(--decor-color, rgba(0, 0, 40, 1));
-  background-color: var(--accent-color, #FF0070);
+  background-color: var(--title-bg-color);
 }
 
 .about__concentration {
@@ -175,7 +178,7 @@
 
 .accent-link {
   display: inline;
-  text-shadow: 2px 2px 0 var(--accent-color, #FF0070);
+  text-shadow: 2px 2px 0 var(--shadow-color);
   font-weight: 400;
   font-size: var(--content-text-size);
   line-height: 23.4px;
@@ -210,7 +213,7 @@
   font-size: var(--content-text-size);
   font-weight: 400;
   color: var(--decor-color, rgba(0, 0, 40, 1));
-  background-color: var(--accent-color, #FF0070);
+  background-color: var(--title-bg-color);
 }
 
 .pisture-wrapper {
@@ -415,7 +418,6 @@
     margin-block-start: 80px;
   }
 
-
   .reasons {
     display: grid;
     grid-template-columns: 1fr 2.06fr;
@@ -518,7 +520,13 @@
 
   .footer-title {
     margin: 0;
-    text-shadow: 2px 2px 0 var(--accent-color, #FF0070);
+    text-shadow: 2px 2px 0 var(--shadow-color, #FF0070);
     font-size: var(--title-font-size);
+  }
+}
+
+@media (width < 375px) {
+  .header__title {
+    font-size: clamp(6.25rem, 5.2321rem + 5.0893vw, 9.8125rem);
   }
 }

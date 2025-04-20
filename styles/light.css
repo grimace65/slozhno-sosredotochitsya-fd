@@ -2,42 +2,17 @@
   --bg: url(../images/cover-image-light.png);
   --bg-color: #FFF1F7;
   --main-color: #353430;
-  --decor-color: #FF8DCB;
+  --decor-color: #353430;
+  --shadow-color: #FF8DCB;
   --accent-color: #353430;
+  --hover-outline: rgba(50, 49, 45, 0.4);
+  --title-bg-color: #FF8DCB;
   --title-color: #FFC2E6;
 }
 
 .theme-light .page {
   .lamp {
     display: none;
-  }
-
-  .header__theme-menu-button:hover {
-    outline: 1px solid #32312D66;
-    cursor: pointer;
-  }
-
-  .accent-title {
-    text-shadow: 4px 4px 0 var(--decor-color, #FF8DCB);
-  }
-
-  .header__subtitle {
-    background-color: var(--decor-color, #FF8DCB);
-    color: var(--main-color, #353430);
-  }
-
-  .title-decor {
-    color: var(--main-color, #353430);
-    background-color: var(--decor-color, #FF8DCB);
-  }
-
-  .thick__title-decor {
-    color: var(--main-color, #353430);
-    background-color: var(--decor-color, #FF8DCB);
-  }
-
-  .accent-link {
-    text-shadow: 2px 2px 0 var(--decor-color, #FF8DCB);
   }
 }
 
@@ -47,7 +22,14 @@
     --bg-color: #FFF1F7;
     --main-color: #353430;
     --decor-color: #353430;
-    --accent-color: #FF8DCB;
+    --shadow-color: #FF8DCB;
+    --accent-color: #353430;
+    --hover-outline: rgba(50, 49, 45, 0.4);
+    --title-bg-color: #FF8DCB;
     --title-color: #FFC2E6;
+  }
+
+  .lamp {
+    display: none;
   }
 }

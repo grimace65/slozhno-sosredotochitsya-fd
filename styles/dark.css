@@ -3,6 +3,9 @@
   --bg-color: #000028;
   --main-color: #F1B2CE;
   --accent-color: #FF0070;
+  --hover-outline: rgba(255, 0, 112, 0.4);
+  --shadow-color: #FF0070;
+  --title-bg-color: #FF0070;
   --title-color: rgba(219, 0, 255, 1);
   --decor-color: rgba(0, 0, 40, 1);
 }
