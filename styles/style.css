@@ -146,7 +146,7 @@
   font-size: var(--content-text-size);
   font-weight: var(--font-weight);
   color: var(--decor-color, rgba(0, 0, 40, 1));
-  background-color: var(--title-bg-color);
+  background-color: var(--title-bg-color, #FF0070);
 }
 
 .about__concentration {
